@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="tejas" class="com.anudip.springdemo.Painter">
+<constructor-arg ref="tri"></constructor-arg>
+</bean>
+
+<bean id="squ" class="com.anudip.springdemo.Square"></bean>
+
+<bean id="tri" class="com.anudip.springdemo.Triangle">
+<constructor-arg name="color" value="green"></constructor-arg>
+</bean>
+
+<bean id="bravo" class="com.anudip.springdemo.Dancer"></bean>
+
+</beans>
