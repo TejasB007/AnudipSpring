@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "tejas" class="com.anudip.springdemo.Painter"> 
+<constructor-arg ref="cir"></constructor-arg>
+</bean>
+
+<bean id="cir" class="com.anudip.springdemo.Circle">
+<constructor-arg name="color" value = "Red"></constructor-arg>
+</bean>
+
+<bean id="rect" class="com.anudip.springdemo.Rectangle">
+<property name="color" value="Blue"></property>
+</bean>
+
+<bean id="tb" class="com.anudip.springdemo.Singer"></bean>
+
+
+</beans>
+
